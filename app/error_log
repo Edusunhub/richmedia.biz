@@ -1,0 +1,16 @@
+[02-Nov-2019 12:17:38 Asia/Kolkata] PHP Warning:  require_once(../config.php): failed to open stream: No such file or directory in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/forgot-password.php on line 2
+[02-Nov-2019 12:17:38 Asia/Kolkata] PHP Fatal error:  require_once(): Failed opening required '../config.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/forgot-password.php on line 2
+[02-Nov-2019 17:52:50 Asia/Kolkata] PHP Parse error:  syntax error, unexpected ')' in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/reset-password.php on line 13
+[02-Nov-2019 17:52:53 Asia/Kolkata] PHP Parse error:  syntax error, unexpected ')' in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/reset-password.php on line 13
+[02-Nov-2019 17:52:59 Asia/Kolkata] PHP Parse error:  syntax error, unexpected ')' in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/reset-password.php on line 13
+[02-Nov-2019 17:53:00 Asia/Kolkata] PHP Parse error:  syntax error, unexpected ')' in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/reset-password.php on line 13
+[25-Nov-2019 21:33:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function redirect() in /home/dprr8htr8t41/public_html/richmedia.biz/beta/signout.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/beta/signout.php on line 17
+[25-Nov-2019 21:36:02 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/dprr8htr8t41/public_html/richmedia.biz/beta/config.php on line 2
+[25-Nov-2019 21:36:07 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/dprr8htr8t41/public_html/richmedia.biz/beta/config.php on line 2
+[25-Nov-2019 21:36:55 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/dprr8htr8t41/public_html/richmedia.biz/beta/config.php on line 2
+[25-Nov-2019 21:39:04 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/dprr8htr8t41/public_html/richmedia.biz/beta/config.php on line 2
+[25-Nov-2019 21:57:21 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/dprr8htr8t41/public_html/richmedia.biz/app/config.php on line 2
+[17-Jun-2021 20:25:17 Asia/Kolkata] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 130024712 bytes) in /home/dprr8htr8t41/public_html/richmedia.biz/app/classes/class.report.php on line 651

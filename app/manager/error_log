@@ -1,0 +1,16 @@
+[02-Nov-2019 16:14:48 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined method Users::managerLogin() in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/manager/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/manager/index.php on line 12
+[02-Nov-2019 16:32:18 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined method Users::managerLogin() in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/manager/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/manager/index.php on line 12
+[02-Nov-2019 16:37:10 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined method Users::managerLogin() in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/manager/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/manager/index.php on line 12
+[06-Nov-2019 21:02:49 Asia/Kolkata] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/manager/all-advertiser.php on line 73
+[06-Nov-2019 21:02:52 Asia/Kolkata] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/manager/all-advertiser.php on line 73
+[06-Nov-2019 21:03:35 Asia/Kolkata] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/manager/all-advertiser.php on line 73
+[06-Nov-2019 21:03:37 Asia/Kolkata] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/manager/all-advertiser.php on line 73

@@ -1,0 +1,174 @@
+[20-Sep-2019 13:26:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getPerformanceModels() on null in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/performance-model.php:74
+Stack trace:
+#0 /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/classes/autoload.php(21): include()
+#1 /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/classes/settings.php(2): include('/home/dprr8htr8...')
+#2 /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/config.php(15): require_once('/home/dprr8htr8...')
+#3 /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/index.php(2): require_once('/home/dprr8htr8...')
+#4 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/performance-model.php on line 74
+[01-Oct-2019 22:13:57 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined method Users::getAllStaffs() in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/all-staff.php:50
+Stack trace:
+#0 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/all-staff.php on line 50
+[14-Oct-2019 13:04:39 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/all-campaigns.php:89
+Stack trace:
+#0 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/all-campaigns.php on line 89
+[14-Oct-2019 13:05:40 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/all-campaigns.php:89
+Stack trace:
+#0 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/all-campaigns.php on line 89
+[15-Oct-2019 17:21:15 Asia/Kolkata] PHP Parse error:  syntax error, unexpected end of file in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/view-campaign.php on line 354
+[15-Oct-2019 17:37:38 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/view-campaign.php:154
+Stack trace:
+#0 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/view-campaign.php on line 154
+[15-Oct-2019 17:39:15 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/view-campaign.php:154
+Stack trace:
+#0 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/view-campaign.php on line 154
+[15-Oct-2019 17:44:37 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/view-campaign.php:154
+Stack trace:
+#0 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/view-campaign.php on line 154
+[15-Oct-2019 17:44:37 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/view-campaign.php:154
+Stack trace:
+#0 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/view-campaign.php on line 154
+[15-Oct-2019 17:45:42 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/view-campaign.php:154
+Stack trace:
+#0 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/view-campaign.php on line 154
+[15-Oct-2019 17:45:42 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/view-campaign.php:154
+Stack trace:
+#0 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/view-campaign.php on line 154
+[15-Oct-2019 17:45:42 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/view-campaign.php:154
+Stack trace:
+#0 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/view-campaign.php on line 154
+[15-Oct-2019 17:47:27 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/view-campaign.php:155
+Stack trace:
+#0 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/view-campaign.php on line 155
+[15-Oct-2019 18:03:47 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/view-campaign.php:174
+Stack trace:
+#0 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/view-campaign.php on line 174
+[15-Oct-2019 18:06:01 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/view-campaign.php:174
+Stack trace:
+#0 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/view-campaign.php on line 174
+[01-Nov-2019 10:49:37 Asia/Kolkata] PHP Parse error:  syntax error, unexpected ';' in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/campaign-payments.php on line 125
+[01-Nov-2019 10:49:43 Asia/Kolkata] PHP Parse error:  syntax error, unexpected ';' in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/campaign-payments.php on line 125
+[01-Nov-2019 10:49:43 Asia/Kolkata] PHP Parse error:  syntax error, unexpected ';' in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/campaign-payments.php on line 125
+[01-Nov-2019 18:27:06 Asia/Kolkata] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Report::updateReport(), 0 passed in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/editexim-report.php on line 6 and exactly 1 expected in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/classes/class.report.php:249
+Stack trace:
+#0 /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/editexim-report.php(6): Report->updateReport()
+#1 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/classes/class.report.php on line 249
+[01-Nov-2019 19:54:08 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to a member function UpdateeximReport() on null in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/editexim-report.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/editexim-report.php on line 6
+[01-Nov-2019 19:54:11 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to a member function report() on null in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/editexim-report.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/editexim-report.php on line 9
+[01-Nov-2019 19:55:51 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to a member function report() on null in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/editexim-report.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/editexim-report.php on line 9
+[01-Nov-2019 20:12:46 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to a member function report() on null in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/editexim-report.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/editexim-report.php on line 9
+[06-Nov-2019 10:41:05 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '}' in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/report-history.php on line 6
+[07-Nov-2019 15:07:05 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined method Users::delete() in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/all-pricing.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/all-pricing.php on line 5
+[07-Nov-2019 15:09:27 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined method Users::delete() in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/all-pricing.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/all-pricing.php on line 5
+[07-Nov-2019 18:51:44 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined method Users::getAllAdvertisersByAdmin() in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/all-advertiser.php:53
+Stack trace:
+#0 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/all-advertiser.php on line 53
+[07-Nov-2019 18:52:17 Asia/Kolkata] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Users::getAllAdvertisersByAdmin(), 0 passed in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/all-advertiser.php on line 53 and at least 1 expected in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/classes/users.php:534
+Stack trace:
+#0 /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/all-advertiser.php(53): Users->getAllAdvertisersByAdmin()
+#1 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/classes/users.php on line 534
+[07-Nov-2019 18:52:24 Asia/Kolkata] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Users::getAllAdvertisersByAdmin(), 0 passed in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/all-advertiser.php on line 53 and at least 1 expected in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/classes/users.php:534
+Stack trace:
+#0 /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/all-advertiser.php(53): Users->getAllAdvertisersByAdmin()
+#1 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/classes/users.php on line 534
+[07-Nov-2019 18:52:25 Asia/Kolkata] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Users::getAllAdvertisersByAdmin(), 0 passed in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/all-advertiser.php on line 53 and at least 1 expected in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/classes/users.php:534
+Stack trace:
+#0 /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/all-advertiser.php(53): Users->getAllAdvertisersByAdmin()
+#1 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/classes/users.php on line 534
+[07-Nov-2019 18:52:26 Asia/Kolkata] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Users::getAllAdvertisersByAdmin(), 0 passed in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/all-advertiser.php on line 53 and at least 1 expected in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/classes/users.php:534
+Stack trace:
+#0 /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/all-advertiser.php(53): Users->getAllAdvertisersByAdmin()
+#1 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/classes/users.php on line 534
+[07-Nov-2019 18:52:26 Asia/Kolkata] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Users::getAllAdvertisersByAdmin(), 0 passed in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/all-advertiser.php on line 53 and at least 1 expected in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/classes/users.php:534
+Stack trace:
+#0 /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/all-advertiser.php(53): Users->getAllAdvertisersByAdmin()
+#1 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/classes/users.php on line 534
+[08-Nov-2019 13:16:09 Asia/Kolkata] PHP Parse error:  syntax error, unexpected end of file in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/view-campaign.php on line 650
+[08-Nov-2019 13:17:25 Asia/Kolkata] PHP Parse error:  syntax error, unexpected end of file in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/view-campaign.php on line 650
+[08-Nov-2019 13:22:33 Asia/Kolkata] PHP Parse error:  syntax error, unexpected end of file in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/view-campaign.php on line 665
+[08-Nov-2019 21:18:38 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '.' in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/all-advertiser.php on line 63
+[08-Nov-2019 21:18:40 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '.' in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/admin/all-advertiser.php on line 63
+[19-Nov-2019 12:43:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Campaign::deleteReport() in /home/dprr8htr8t41/public_html/richmedia.biz/app/admin/all-reports.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/app/admin/all-reports.php on line 8
+[19-Nov-2019 12:45:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Campaign::deleteReport() in /home/dprr8htr8t41/public_html/richmedia.biz/app/admin/all-reports.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/app/admin/all-reports.php on line 8
+[19-Nov-2019 13:09:44 UTC] PHP Fatal error:  Uncaught Error: Call to a member function deleteReport() on null in /home/dprr8htr8t41/public_html/richmedia.biz/app/admin/all-reports.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/app/admin/all-reports.php on line 9
+[19-Nov-2019 14:32:32 UTC] PHP Fatal error:  Uncaught Error: Call to a member function deleteReport() on null in /home/dprr8htr8t41/public_html/richmedia.biz/app/admin/all-reports.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/app/admin/all-reports.php on line 8
+[25-Nov-2019 20:06:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function difine() in /home/dprr8htr8t41/public_html/richmedia.biz/beta/config.php:35
+Stack trace:
+#0 /home/dprr8htr8t41/public_html/richmedia.biz/beta/admin/settings.php(2): require_once()
+#1 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/beta/config.php on line 35
+[25-Nov-2019 20:10:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function difine() in /home/dprr8htr8t41/public_html/richmedia.biz/beta/config.php:35
+Stack trace:
+#0 /home/dprr8htr8t41/public_html/richmedia.biz/beta/admin/settings.php(2): require_once()
+#1 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/beta/config.php on line 35
+[25-Nov-2019 20:10:45 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function difine() in /home/dprr8htr8t41/public_html/richmedia.biz/beta/config.php:35
+Stack trace:
+#0 /home/dprr8htr8t41/public_html/richmedia.biz/beta/admin/settings.php(2): require_once()
+#1 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/beta/config.php on line 35
+[25-Nov-2019 20:10:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function difine() in /home/dprr8htr8t41/public_html/richmedia.biz/beta/config.php:35
+Stack trace:
+#0 /home/dprr8htr8t41/public_html/richmedia.biz/beta/admin/settings.php(2): require_once()
+#1 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/beta/config.php on line 35
+[25-Nov-2019 20:11:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function difine() in /home/dprr8htr8t41/public_html/richmedia.biz/beta/config.php:35
+Stack trace:
+#0 /home/dprr8htr8t41/public_html/richmedia.biz/beta/admin/settings.php(2): require_once()
+#1 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/beta/config.php on line 35
+[25-Nov-2019 20:11:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function difine() in /home/dprr8htr8t41/public_html/richmedia.biz/beta/config.php:35
+Stack trace:
+#0 /home/dprr8htr8t41/public_html/richmedia.biz/beta/admin/index.php(2): require_once()
+#1 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/beta/config.php on line 35

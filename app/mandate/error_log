@@ -1,0 +1,22 @@
+[02-Nov-2019 18:51:49 Asia/Kolkata] PHP Warning:  require_once(config.php): failed to open stream: No such file or directory in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/support/forgot-password.php on line 2
+[02-Nov-2019 18:51:49 Asia/Kolkata] PHP Fatal error:  require_once(): Failed opening required 'config.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/support/forgot-password.php on line 2
+[02-Nov-2019 18:51:52 Asia/Kolkata] PHP Warning:  require_once(config.php): failed to open stream: No such file or directory in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/support/forgot-password.php on line 2
+[02-Nov-2019 18:51:52 Asia/Kolkata] PHP Fatal error:  require_once(): Failed opening required 'config.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/support/forgot-password.php on line 2
+[02-Nov-2019 18:52:30 Asia/Kolkata] PHP Warning:  require_once(config.php): failed to open stream: No such file or directory in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/support/forgot-password.php on line 2
+[02-Nov-2019 18:52:30 Asia/Kolkata] PHP Fatal error:  require_once(): Failed opening required 'config.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/support/forgot-password.php on line 2
+[02-Nov-2019 18:52:31 Asia/Kolkata] PHP Warning:  require_once(config.php): failed to open stream: No such file or directory in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/support/forgot-password.php on line 2
+[02-Nov-2019 18:52:31 Asia/Kolkata] PHP Fatal error:  require_once(): Failed opening required 'config.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/support/forgot-password.php on line 2
+[07-Nov-2019 13:22:32 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '<' in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/support/view-campaign.php on line 598
+[07-Nov-2019 13:22:35 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '<' in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/support/view-campaign.php on line 598
+[07-Nov-2019 13:22:39 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '<' in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/support/view-campaign.php on line 598
+[07-Nov-2019 13:22:45 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '<' in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/support/view-campaign.php on line 598
+[07-Nov-2019 13:22:53 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '<' in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/support/view-campaign.php on line 598
+[07-Nov-2019 16:36:15 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '<' in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/support/view-campaign.php on line 598
+[07-Nov-2019 16:37:15 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '<' in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/support/view-campaign.php on line 580
+[07-Nov-2019 16:37:18 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '<' in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/support/view-campaign.php on line 580
+[07-Nov-2019 16:37:19 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '<' in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/support/view-campaign.php on line 580
+[07-Nov-2019 16:37:20 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '<' in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/support/view-campaign.php on line 580
+[07-Nov-2019 16:37:22 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '<' in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/support/view-campaign.php on line 580
+[07-Nov-2019 16:37:23 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '<' in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/support/view-campaign.php on line 580
+[07-Nov-2019 16:37:36 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '<' in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/support/view-campaign.php on line 580
+[07-Nov-2019 16:37:56 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '<' in /home/dprr8htr8t41/public_html/richmedia.biz/rma/app/support/view-campaign.php on line 580

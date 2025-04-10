@@ -1,0 +1,16 @@
+[25-Nov-2019 12:45:02 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/dprr8htr8t41/public_html/richmedia.biz/beta/advertiser/paypal/process.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/beta/advertiser/paypal/process.php on line 49
+[25-Nov-2019 12:46:24 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/dprr8htr8t41/public_html/richmedia.biz/beta/advertiser/paypal/process.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/beta/advertiser/paypal/process.php on line 49
+[25-Nov-2019 12:46:25 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/dprr8htr8t41/public_html/richmedia.biz/beta/advertiser/paypal/process.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/beta/advertiser/paypal/process.php on line 49
+[25-Nov-2019 12:46:27 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/dprr8htr8t41/public_html/richmedia.biz/beta/advertiser/paypal/process.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/dprr8htr8t41/public_html/richmedia.biz/beta/advertiser/paypal/process.php on line 49
