@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Secure Payment Form</title>
+  <title>Richmedia Payment</title>
   <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: #f5f9fc;
+      background: #f4f6fa;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -20,21 +20,29 @@
       background: #fff;
       padding: 2rem;
       border-radius: 12px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
       width: 100%;
       max-width: 400px;
+      color: #0b1f3a;
     }
 
     h2 {
       text-align: center;
-      color: #1EA698;
-      margin-bottom: 1.5rem;
+      color: #0b1f3a;
+      margin-bottom: 1rem;
+    }
+
+    img.logo {
+      max-width: 140px;
+      display: block;
+      margin: 0 auto 1rem;
     }
 
     label {
       display: block;
       margin-bottom: 0.3rem;
       font-weight: 600;
+      color: #0b1f3a;
     }
 
     input {
@@ -47,8 +55,8 @@
     }
 
     .error {
-      color: red;
-      font-size: 0.9rem;
+      color: #f25c05;
+      font-size: 0.85rem;
       margin-top: -0.8rem;
       margin-bottom: 0.8rem;
       display: none;
@@ -57,7 +65,7 @@
     button {
       width: 100%;
       padding: 0.75rem;
-      background: #1EA698;
+      background: #f25c05;
       color: white;
       border: none;
       border-radius: 6px;
@@ -67,14 +75,15 @@
     }
 
     button:hover {
-      background: #168d82;
+      background: #d04f04;
     }
   </style>
 </head>
 <body>
 
   <form id="paymentForm">
-    <h2>Payment Form</h2>
+    <img src="https://richmedia.biz/assets/images/logo.png" alt="Richmedia Logo" class="logo" />
+    <h2>Richmedia Payment Form</h2>
 
     <label for="name">Name:</label>
     <input type="text" id="name" required />
@@ -104,7 +113,6 @@
 
       let isValid = true;
 
-      // Reset all error messages
       document.querySelectorAll('.error').forEach(el => el.style.display = 'none');
 
       if (name === "") {
@@ -143,7 +151,6 @@
       const amount = parseFloat(document.getElementById('amount').value.trim());
 
       try {
-        // Send basic form info
         let formData = new FormData();
         formData.append('contact', number);
         formData.append('name', name);
@@ -156,13 +163,10 @@
           body: formData
         });
 
-        // Create Razorpay order
         const res = await fetch('https://api.123admissions.com/api/v1/create-order-an', {
           method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ amount: amount * 100 })  // Convert to paisa
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ amount: amount * 100 })  // paisa
         });
 
         const order = await res.json();
@@ -171,9 +175,9 @@
           key: 'rzp_live_03ijsdCrvMvOp9',
           amount: order.amount,
           currency: order.currency,
-          name: 'Andhra University',
+          name: 'Richmedia',
           description: 'Application Payment',
-          image: 'https://api.123admissions.com/uploads/UniversityLogo/1717047631286_Andhra%20University.png',
+          image: 'https://richmedia.biz/assets/images/logo.png',
           order_id: order.id,
           handler: function (response) {
             alert('Payment successful. Payment ID: ' + response.razorpay_payment_id);
@@ -184,8 +188,8 @@
             contact: number,
           },
           theme: {
-            color: '#1EA698',
-            image: 'https://api.123admissions.com/uploads/UniversityLogo/1717047631286_Andhra%20University.png',
+            color: '#f25c05', // Richmedia accent color
+            image: 'https://richmedia.biz/assets/images/logo.png'
           },
         };
 
