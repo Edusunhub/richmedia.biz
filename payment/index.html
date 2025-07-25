@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment Integration</title>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+  <h2>Payment Form</h2>
+  <form id="paymentForm">
+    <label>Name:</label><br />
+    <input type="text" id="name" required /><br />
+
+    <label>Email:</label><br />
+    <input type="email" id="email" required /><br />
+
+    <label>Phone Number:</label><br />
+    <input type="tel" id="number" required /><br /><br />
+
+    <button type="submit">Pay Now</button>
+  </form>
+
+  <script>
+    const validate = () => {
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const number = document.getElementById('number').value.trim();
+
+      return name !== "" && email !== "" && number !== "";
+    };
+
+    document.getElementById('paymentForm').addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      const value = {
+        name: document.getElementById('name').value.trim(),
+        email: document.getElementById('email').value.trim(),
+        number: document.getElementById('number').value.trim()
+      };
+
+      const valid = validate();
+      console.log('validate', valid);
+      if (valid) {
+        let formData = new FormData();
+        formData.append('contact', value.number);
+        formData.append('name', value.name);
+        formData.append('email', value.email);
+        formData.append('cou', 'AN');
+        formData.append('id', '98');
+
+        try {
+          // Submit user data
+          await fetch('https://api.123admissions.com/api/v1/formall', {
+            method: 'POST',
+            body: formData
+          });
+
+          // Create Razorpay order
+          const res = await fetch('https://api.123admissions.com/api/v1/create-order-an', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({}),
+          });
+
+          const order = await res.json();
+
+          const options = {
+            key: 'rzp_live_03ijsdCrvMvOp9',
+            amount: order.amount,
+            currency: order.currency,
+            name: 'Andhra University',
+            description: 'Purchase Description',
+            image: 'https://api.123admissions.com/uploads/UniversityLogo/1717047631286_Andhra%20University.png',
+            order_id: order.id,
+            handler: function (response) {
+              alert('Payment successful. Payment ID: ' + response.razorpay_payment_id);
+              // You can post payment success info to your backend here
+            },
+            prefill: {
+              name: value.name,
+              email: value.email,
+              contact: value.number,
+            },
+            notes: {
+              address: 'Customer Address',
+            },
+            theme: {
+              color: '#1EA698',
+              image: 'https://api.123admissions.com/uploads/UniversityLogo/1717047631286_Andhra%20University.png',
+            },
+          };
+
+          const rzp = new Razorpay(options);
+          rzp.open();
+
+        } catch (error) {
+          console.error('Payment initiation failed', error);
+          alert('Something went wrong. Please try again.');
+        }
+      } else {
+        alert('Please fill all the fields correctly.');
+      }
+    });
+  </script>
+</body>
+</html>
