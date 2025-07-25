@@ -166,7 +166,7 @@
         const res = await fetch('https://api.123admissions.com/api/v1/create-order-an', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ amount: amount * 100 })  // paisa
+          body: JSON.stringify({ amount: amount })  // paisa
         });
 
         const order = await res.json();
