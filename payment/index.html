@@ -3,105 +3,197 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Payment Integration</title>
+  <title>Secure Payment Form</title>
   <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f9fc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    form {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #1EA698;
+      margin-bottom: 1.5rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-weight: 600;
+    }
+
+    input {
+      width: 100%;
+      padding: 0.6rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    .error {
+      color: red;
+      font-size: 0.9rem;
+      margin-top: -0.8rem;
+      margin-bottom: 0.8rem;
+      display: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 0.75rem;
+      background: #1EA698;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #168d82;
+    }
+  </style>
 </head>
 <body>
-  <h2>Payment Form</h2>
+
   <form id="paymentForm">
-    <label>Name:</label><br />
-    <input type="text" id="name" required /><br />
+    <h2>Payment Form</h2>
 
-    <label>Email:</label><br />
-    <input type="email" id="email" required /><br />
+    <label for="name">Name:</label>
+    <input type="text" id="name" required />
+    <div class="error" id="nameError">Name is required.</div>
 
-    <label>Phone Number:</label><br />
-    <input type="tel" id="number" required /><br /><br />
+    <label for="email">Email:</label>
+    <input type="email" id="email" required />
+    <div class="error" id="emailError">Enter a valid email address.</div>
+
+    <label for="number">Phone Number:</label>
+    <input type="tel" id="number" required />
+    <div class="error" id="numberError">Enter a valid 10-digit phone number.</div>
+
+    <label for="amount">Amount (INR):</label>
+    <input type="number" id="amount" required min="1" />
+    <div class="error" id="amountError">Enter a valid amount greater than 0.</div>
 
     <button type="submit">Pay Now</button>
   </form>
 
   <script>
-    const validate = () => {
+    function validateForm() {
       const name = document.getElementById('name').value.trim();
       const email = document.getElementById('email').value.trim();
       const number = document.getElementById('number').value.trim();
+      const amount = document.getElementById('amount').value.trim();
 
-      return name !== "" && email !== "" && number !== "";
-    };
+      let isValid = true;
+
+      // Reset all error messages
+      document.querySelectorAll('.error').forEach(el => el.style.display = 'none');
+
+      if (name === "") {
+        document.getElementById('nameError').style.display = 'block';
+        isValid = false;
+      }
+
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(email)) {
+        document.getElementById('emailError').style.display = 'block';
+        isValid = false;
+      }
+
+      const phonePattern = /^[0-9]{10}$/;
+      if (!phonePattern.test(number)) {
+        document.getElementById('numberError').style.display = 'block';
+        isValid = false;
+      }
+
+      if (isNaN(amount) || parseFloat(amount) <= 0) {
+        document.getElementById('amountError').style.display = 'block';
+        isValid = false;
+      }
+
+      return isValid;
+    }
 
     document.getElementById('paymentForm').addEventListener('submit', async function (e) {
       e.preventDefault();
 
-      const value = {
-        name: document.getElementById('name').value.trim(),
-        email: document.getElementById('email').value.trim(),
-        number: document.getElementById('number').value.trim()
-      };
+      if (!validateForm()) return;
 
-      const valid = validate();
-      console.log('validate', valid);
-      if (valid) {
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const number = document.getElementById('number').value.trim();
+      const amount = parseFloat(document.getElementById('amount').value.trim());
+
+      try {
+        // Send basic form info
         let formData = new FormData();
-        formData.append('contact', value.number);
-        formData.append('name', value.name);
-        formData.append('email', value.email);
+        formData.append('contact', number);
+        formData.append('name', name);
+        formData.append('email', email);
         formData.append('cou', 'AN');
         formData.append('id', '98');
 
-        try {
-          // Submit user data
-          await fetch('https://api.123admissions.com/api/v1/formall', {
-            method: 'POST',
-            body: formData
-          });
+        await fetch('https://api.123admissions.com/api/v1/formall', {
+          method: 'POST',
+          body: formData
+        });
 
-          // Create Razorpay order
-          const res = await fetch('https://api.123admissions.com/api/v1/create-order-an', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({}),
-          });
+        // Create Razorpay order
+        const res = await fetch('https://api.123admissions.com/api/v1/create-order-an', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ amount: amount * 100 })  // Convert to paisa
+        });
 
-          const order = await res.json();
+        const order = await res.json();
 
-          const options = {
-            key: 'rzp_live_03ijsdCrvMvOp9',
-            amount: order.amount,
-            currency: order.currency,
-            name: 'Andhra University',
-            description: 'Purchase Description',
+        const options = {
+          key: 'rzp_live_03ijsdCrvMvOp9',
+          amount: order.amount,
+          currency: order.currency,
+          name: 'Andhra University',
+          description: 'Application Payment',
+          image: 'https://api.123admissions.com/uploads/UniversityLogo/1717047631286_Andhra%20University.png',
+          order_id: order.id,
+          handler: function (response) {
+            alert('Payment successful. Payment ID: ' + response.razorpay_payment_id);
+          },
+          prefill: {
+            name: name,
+            email: email,
+            contact: number,
+          },
+          theme: {
+            color: '#1EA698',
             image: 'https://api.123admissions.com/uploads/UniversityLogo/1717047631286_Andhra%20University.png',
-            order_id: order.id,
-            handler: function (response) {
-              alert('Payment successful. Payment ID: ' + response.razorpay_payment_id);
-              // You can post payment success info to your backend here
-            },
-            prefill: {
-              name: value.name,
-              email: value.email,
-              contact: value.number,
-            },
-            notes: {
-              address: 'Customer Address',
-            },
-            theme: {
-              color: '#1EA698',
-              image: 'https://api.123admissions.com/uploads/UniversityLogo/1717047631286_Andhra%20University.png',
-            },
-          };
+          },
+        };
 
-          const rzp = new Razorpay(options);
-          rzp.open();
-
-        } catch (error) {
-          console.error('Payment initiation failed', error);
-          alert('Something went wrong. Please try again.');
-        }
-      } else {
-        alert('Please fill all the fields correctly.');
+        const rzp = new Razorpay(options);
+        rzp.open();
+      } catch (err) {
+        console.error('Error initiating payment:', err);
+        alert('Something went wrong. Please try again later.');
       }
     });
   </script>
